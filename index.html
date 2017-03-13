@@ -246,20 +246,20 @@ Zusätzlich muss darauf geachtet werden, dass andere Abhängigkeiten zu Ruby ins
 
 <h3 id="projekt-aufsetzen">Projekt aufsetzen</h3>
 
-<p>Das aufsetzten eines neuen Slate-Projekts ist relativ simple. Man benötigt lediglich den Inhalt des Git-Repositories und die installierten Abhängigkeiten. In dem Git-Repository befindet sich ein <code class="prettyprint">source</code>-Ordner, der nach belieben geändert und erweitert werden kann. Der Inhalt dieses ordners wird letztendlich nach HTML gerendert und veröffentlicht.</p>
+<p>Das Aufsetzten eines neuen Slate-Projekts ist relativ simple. Man benötigt lediglich den Inhalt des Git-Repositories und die installierten Abhängigkeiten. In dem Git-Repository befindet sich ein <code class="prettyprint">source</code>-Ordner, der nach belieben geändert und erweitert werden kann. Der Inhalt dieses Ordners wird letztendlich nach HTML gerendert und veröffentlicht.</p>
 
-<p>Es wird empfohlen, dass Git-Repository zu forken, damit man anschließend mittels des mitgelieferten deploy-Skriptes seine Dokumentation auf seinen eigenen Github-Pages veröffentlichen kann. Es ist jedoch auch möglich mittels einem bundle-Befehl die Dokumentation händisch zu rendern und an einem beliebigen Ort zu hosten. Dazu ist es nicht nötig das Repository zu forken. Ein deployment über jenkins von gitlab zu den github-pages wäre beispielsweise auch denkbar.</p>
+<p>Es wird empfohlen, dass Git-Repository zu forken, damit man anschließend mittels des mitgelieferten deploy-Skriptes seine Dokumentation auf seinen eigenen Github-Pages veröffentlichen kann. Es ist jedoch auch möglich, mittels einem bundle-Befehl, die Dokumentation händisch zu rendern und an einem beliebigen Ort zu hosten. Dazu ist es nicht nötig das Repository zu forken. Ein deployment über jenkins von gitlab zu den github-pages wäre beispielsweise auch denkbar.</p>
 
 <h3 id="testen-rendern-ver-ffentlichen">Testen, Rendern, Veröffentlichen</h3>
 
 <h4 id="lokaler-testserver">Lokaler Testserver</h4>
 
-<p>Um ein Slate-Projekt lokal zutesten, kann man den mitgelieferten Testserver nutzen. Dieser wird mittels bundle-Befehl gestartet.</p>
+<p>Um ein Slate-Projekt lokal zu testen, kann man den mitgelieferten Testserver nutzen. Dieser wird mittels bundle-Befehl gestartet.</p>
 <pre class="highlight shell tab-shell"><code>bundle <span class="nb">exec </span>middleman server
 </code></pre>
 <h4 id="rendern">Rendern</h4>
 
-<p>Will man die Markdown-Dateien rendern und als HTML selber veröffentlichen, gibt es einen weiteren bundle-Befehl.</p>
+<p>Will man die Markdown-Dateien rendern, und als HTML selber veröffentlichen, gibt es einen weiteren bundle-Befehl.</p>
 <pre class="highlight shell tab-shell"><code>bundle <span class="nb">exec </span>middleman build --clean
 </code></pre>
 <h4 id="ghpages">GhPages</h4>
@@ -269,8 +269,8 @@ Zusätzlich muss darauf geachtet werden, dass andere Abhängigkeiten zu Ruby ins
 </code></pre>
 <h3 id="konfiguration">Konfiguration</h3>
 
-<p>Konfiguriert wird Slate über einen YAML-Bereich am Anfang der index.html.md, bei der es sich um die Markdown-Datei handelt aus der die index.html gerendert wird.
-Dabei ist es möglich einen Title anzugeben, welcher für die header-Informationen der Seite genutzt wird. Des Weiteren können unterstütze Programmiersprachen und footer-Inhalte angegeben werden und eingestellt werden, welche Markdown-Dateien eingebunden werden sollen und ob es möglich sein soll die Dokumentation zu durchsuchen.</p>
+<p>Konfiguriert wird Slate über einen YAML-Bereich am Anfang der index.html.md, bei der es sich um die Markdown-Datei handelt, aus der die index.html gerendert wird.
+Dabei ist es möglich einen Titel anzugeben, welcher für die header-Informationen der Seite genutzt wird. Des Weiteren können unterstütze Programmiersprachen und footer-Inhalte angegeben werden und eingestellt werden, welche Markdown-Dateien eingebunden werden sollen und ob es möglich sein soll die Dokumentation zu durchsuchen.</p>
 <pre class="highlight markdown tab-markdown"><code><span class="nn">---</span>
 <span class="na">title</span><span class="pi">:</span> <span class="s">API Reference</span>
 
@@ -296,7 +296,7 @@ Dabei ist es möglich einen Title anzugeben, welcher für die header-Information
 
 <h3 id="text-hinweise">Text-Hinweise</h3>
 
-<p>Zusätzlich lassen sich hinweise im Text hervorheben. Hierfür können html-Tags verwendet werden, die dann je nach class-Attribut zum Beispiel als Positiver-Hinweis, Bemerkung oder Warnung angezeigt werden.</p>
+<p>Zusätzlich lassen sich hinweise im Text hervorheben. Hierfür können html-Tags verwendet werden, die dann je nach class-Attribut zum Beispiel als Positiverhinweis, Bemerkung oder Warnung angezeigt werden.</p>
 
 <aside class="success">
 Gut!
