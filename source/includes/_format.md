@@ -2,7 +2,7 @@
 ### Textformatierung
 Für die Formatierung des Textes kann die normale Markdown-Notation genutzt werden.
 ### Text-Hinweise
-Zusätzlich lassen sich hinweise im Text hervorheben. Hierfür können html-Tags verwendet werden, die dann je nach class-Attribut zum Beispiel als Positiver-Hinweis, Bemerkung oder Warnung angezeigt werden.
+Zusätzlich lassen sich hinweise im Text hervorheben. Hierfür können html-Tags verwendet werden, die dann je nach class-Attribut zum Beispiel als Positiverhinweis, Bemerkung oder Warnung angezeigt werden.
 
 <aside class="success">
 Gut!
